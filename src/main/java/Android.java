@@ -18,7 +18,8 @@ public class Android {
      * @param height the height of this Robot
      */
     public Android(String name, double height) {
-        // TODO: replace this line with your code
+        this.name = name;
+        this.height = height;
     }
 
     /**
@@ -43,7 +44,7 @@ public class Android {
      */
     public double getHeightInCentiMeters(){
         // use 1in = 2.54cm
-        // TODO: replace this line with your code
+        return this.getHeightInInches()*2.54;
     }
 
     /**
@@ -59,7 +60,7 @@ public class Android {
      * @param height the new height of this Robot in inches
      */
     public void setHeight(double height) {
-        // TODO: replace this line with your code
+    this.height = height;
     }
 
     //===================== Do not touch code below this line =================
